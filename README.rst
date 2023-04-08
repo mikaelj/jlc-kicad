@@ -66,7 +66,16 @@ Contents of ``PG-DSO-8_L5.0-W4.0-P1.27-LS6.0-BL.kicad_mod.patch`` - a fix for 3D
 
 jlcpcb-postprocess.py
 =====================
-For use with the KiCad JLCPCB fabrication toolkit.  Processes BOM file and positions file to match the JLCPCB input format.
+For use with the KiCad JLCPCB fabrication toolkit generating a production
+directory w/ fabrication data.  Processes BOM file and positions file to match
+the JLCPCB input format.
+
+Usage::
+
+    jlcpcb-postprocess.py <path/to/production>
+
+Processes the files in the ``production`` directory: ``bom.csv`` and ``positions.csv``. The files are overwritten.
+
 
 ---------------
 
